@@ -40,10 +40,13 @@ class _MyAppState extends State<MyApp> {
           centerTitle: true,
           backgroundColor: Colors.green[400],
         ),
-        body: Center(
+        body: Container(
+          color: Colors.green[50],
+          margin: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+          padding: EdgeInsets.all(10),
           child: Text(
             '${jokes[count]}',
-            style: TextStyle(fontSize: 40),
+            style: TextStyle(fontSize: 25),
           ),
         ),
         floatingActionButton: FloatingActionButton(
